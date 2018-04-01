@@ -1,6 +1,6 @@
 class SearchersController < ApplicationController
-  QUERY_OPTIONS = %w(title body code user tag stocks created_at updated_at)
-  INTEGER_QUERY_OPTIONS = %w(stocks created_at updated_at)
+  QUERY_OPTIONS = %w(title body code user tag stocks created updated)
+  INTEGER_QUERY_OPTIONS = %w(stocks created updated)
   def index
   end
 

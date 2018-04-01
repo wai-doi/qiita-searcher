@@ -26,8 +26,8 @@ https://qiita-searcher.herokuapp.com/
 #### Stocks
 x件より多く (少なく) ストックされている
 
-#### Created_at
+#### Created
 xxxx-xx-xx以降 (以前) に作成された
 
-#### Updated_at
+#### Updated
 xxxx-xx-xx以降 (以前) に更新された

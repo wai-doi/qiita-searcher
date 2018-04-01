@@ -38,37 +38,38 @@
   <div class="form-row">
     <div class="form-group col-md-4">
       <%= label_tag :stocks %>
-      <%= text_field_tag :stocks %>
-      <%= radio_button_tag :stocks_inequality, '>', true %> up
-      <%= radio_button_tag :stocks_inequality, '<' %> low
+      <%= number_field_tag :stocks, nil, min: 0, step: 10 %>
+      <%= radio_button_tag :stocks_inequality, '>', true %> upper
+      <%= radio_button_tag :stocks_inequality, '<' %> lower
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-4">
-      <%= label_tag :created_at %>
-      <%= text_field_tag :created_at %>
-      <%= radio_button_tag :created_at_inequality, '>', true %> up
-      <%= radio_button_tag :created_at_inequality, '<' %> low
+      <%= label_tag :created %>
+      <%= date_field_tag :created %>
+      <%= radio_button_tag :created_inequality, '>', true %> after
+      <%= radio_button_tag :created_inequality, '<' %> before
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-4">
-      <%= label_tag :updated_at %>
-      <%= text_field_tag :updated_at %>
-      <%= radio_button_tag :updated_at_inequality, '>', true %> up
-      <%= radio_button_tag :updated_at_inequality, '<' %> low
+      <%= label_tag :updated %>
+      <%= date_field_tag :updated %>
+      <%= radio_button_tag :updated_inequality, '>', true %> after
+      <%= radio_button_tag :updated_inequality, '<' %> before
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-offset-4 col-md-4">
-      <%= submit_tag "Search", class:'btn btn-primary btn-block' %>
+      <%= submit_tag "Search", class:'btn btn-primary btn-block btn-lg' %>
     </div>
     <div class="from-group">
-      <%= submit_tag "clear", type: :reset, class: 'btn btn-default' %>
+      <%= submit_tag "clear", type: :reset, class: 'btn btn-default btn-lg' %>
     </div>
   </div>
+
   <% end %>
 </div>
