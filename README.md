@@ -1,24 +1,33 @@
-# README
+# Qiita Searcher
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Qiita](https://qiita.com)の検索機能を、検索オプション別にして検索しやすくしました.
 
-Things you may want to cover:
+## Deploy
+https://qiita-searcher.herokuapp.com/
 
-* Ruby version
+## 使い方
+検索オプションは以下のものがあります.
 
-* System dependencies
+#### Title
+タイトルに含んでいる
 
-* Configuration
+#### Body
+本文に含んでいる
 
-* Database creation
+#### Code
+コードに含んでいる
 
-* Database initialization
+#### Tag
+タグが付いている
 
-* How to run the test suite
+#### User
+指定のユーザーによって作成された
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Stocks
+x件より多く (少なく) ストックされている
 
-* Deployment instructions
+#### Created_at
+xxxx-xx-xx以降 (以前) に作成された
 
-* ...
+#### Updated_at
+xxxx-xx-xx以降 (以前) に更新された
